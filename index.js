@@ -5,8 +5,6 @@ var io = require('socket.io')(http);
 
 var port = 3001;
 
-var messages = [];
-
 io.on('connection', function(socket) {
   console.log('New user connected: ' + socket.id);
 
