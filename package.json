@@ -1,0 +1,23 @@
+{
+  "name": "e2e-chat-backend",
+  "version": "1.0.0",
+  "description": "Backend socket server for e2e-chat-frontend",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://godiagonal@github.com/precisit/e2e-chat-backend.git"
+  },
+  "author": "Samuel Johansson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/precisit/e2e-chat-backend/issues"
+  },
+  "homepage": "https://github.com/precisit/e2e-chat-backend#readme",
+  "dependencies": {
+    "moment": "^2.18.1",
+    "socket.io": "^1.7.3"
+  }
+}
