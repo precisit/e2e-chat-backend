@@ -1,21 +1,21 @@
 {
-  "name": "e2e-chat-backend",
+  "name": "simple-chat",
   "version": "1.0.0",
-  "description": "Backend socket server for e2e-chat-frontend",
+  "description": "Simple chat application",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://godiagonal@github.com/precisit/e2e-chat-backend.git"
+    "url": "git+https://godiagonal@github.com/precisit/simple-chat.git"
   },
   "author": "Samuel Johansson",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/precisit/e2e-chat-backend/issues"
+    "url": "https://github.com/precisit/simple-chat/issues"
   },
-  "homepage": "https://github.com/precisit/e2e-chat-backend#readme",
+  "homepage": "https://github.com/precisit/simple-chat#readme",
   "dependencies": {
     "express": "4.15.2",
     "moment": "^2.18.1",
