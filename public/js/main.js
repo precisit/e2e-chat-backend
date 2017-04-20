@@ -1,5 +1,6 @@
 // Connect to the server
 // NOTE: You might have to change the address/port number depending on your server
+// You can also use: var socket = io();
 var socket = io.connect('http://localhost:3001');
 
 var sendButton = document.getElementById('send');
