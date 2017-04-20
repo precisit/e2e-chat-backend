@@ -1,13 +1,13 @@
 var moment = require('moment');
-var app = require('express')();
+var path = require('path');
+var express = require('express');
+var app = express();
 var http = require('http').Server(app);
 var io = require('socket.io')(http);
 var port = 3001;
 
-// Start the HTTP server
-http.listen(port, function(){
-  console.log('Server started on port: ' + port);
-});
+// Make files in public folder accessible from the frontend
+app.use(express.static(path.join(__dirname, 'public')));
 
 // Start listening to socket connections
 io.on('connection', function(socket) {
@@ -36,4 +36,9 @@ io.on('connection', function(socket) {
     // ... and forward it to all connected clients
     io.sockets.emit('newMessage', message);
   });
+});
+
+// Start the HTTP server
+http.listen(port, function(){
+  console.log('Server started on port: ' + port);
 });
